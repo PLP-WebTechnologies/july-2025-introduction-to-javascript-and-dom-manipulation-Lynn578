@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+body.light-theme {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+body.dark-theme {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+}
+
+body.blue-theme {
+    background: linear-gradient(135deg, #00416a, #799f0c, #ffe000);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.dark-theme .container {
+    background-color: rgba(40, 40, 60, 0.95);
+    color: #fff;
+}
+
+.blue-theme .container {
+    background-color: rgba(240, 248, 255, 0.95);
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.dark-theme header {
+    background: linear-gradient(to right, #2c3e50, #1a2530);
+}
+
+.blue-theme header {
+    background: linear-gradient(to right, #00416a, #0074b7);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+.section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .section {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.blue-theme .section {
+    background-color: #e1f5fe;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.dark-theme h2 {
+    color: #fff;
+    border-bottom: 2px solid #1abc9c;
+}
+
+.blue-theme h2 {
+    color: #00416a;
+    border-bottom: 2px solid #0074b7;
+}
+
+h3 {
+    color: #3498db;
+    margin: 15px 0 10px;
+}
+
+.dark-theme h3 {
+    color: #1abc9c;
+}
+
+.blue-theme h3 {
+    color: #0074b7;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.demo {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e8f4fc;
+    border-radius: 8px;
+}
+
+.dark-theme .demo {
+    background-color: #34495e;
+}
+
+.blue-theme .demo {
+    background-color: #b3e5fc;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.dark-theme button {
+    background-color: #1abc9c;
+}
+
+.dark-theme button:hover {
+    background-color: #16a085;
+}
+
+.blue-theme button {
+    background-color: #0074b7;
+}
+
+.blue-theme button:hover {
+    background-color: #00416a;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.output {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    min-height: 50px;
+    border-left: 4px solid #2ecc71;
+}
+
+.dark-theme .output {
+    background-color: #2c3e50;
+    border-left: 4px solid #1abc9c;
+}
+
+.blue-theme .output {
+    background-color: #e1f5fe;
+    border-left: 4px solid #0074b7;
+}
+
+.hidden {
+    display: none;
+}
+
+#secretMessage {
+    background: #ffeaa7;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.dark-theme #secretMessage {
+    background: #f39c12;
+    color: #2c3e50;
+}
+
+.blue-theme #secretMessage {
+    background: #fff8e1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.dark-theme footer {
+    background-color: #1a2530;
+}
+
+.blue-theme footer {
+    background-color: #00416a;
+}
